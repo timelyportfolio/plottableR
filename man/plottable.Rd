@@ -4,7 +4,7 @@
 \alias{plottable}
 \title{Plot R data with Plottable.js}
 \usage{
-plottable(message, width = NULL, height = NULL)
+plottable(..., width = NULL, height = NULL)
 }
 \description{
 plotting and creation function.

@@ -5,11 +5,11 @@
 #' @import htmlwidgets
 #'
 #' @export
-plottable <- function(message, width = NULL, height = NULL) {
+plottable <- function(..., width = NULL, height = NULL) {
 
   # forward options using x
   x = list(
-    message = message
+    ...
   )
 
   # create widget

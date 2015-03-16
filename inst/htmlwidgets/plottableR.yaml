@@ -1,0 +1,10 @@
+dependencies:
+  - name: d3
+    version: 3.5.5
+    src: htmlwidgets/lib/d3
+    script: d3.min.js
+  - name: plottable
+    version: 0.48.0
+    src: htmlwidgets/lib/plottable
+    script: plottable.min.js
+    stylesheet: plottable.css

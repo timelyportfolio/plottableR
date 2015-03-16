@@ -1,0 +1,27 @@
+Package: plottableR
+Type: Package
+Title: Plottable.js in R as an htmlwidget
+Version: 0.1
+Date: 2015-03-16
+Authors@R: c(
+    person("Palantir Technologies", "Kiernander", role = c("aut", "cph"), comment = "Plottable.js
+      library in htmlwidgets/lib, https://github.com/PMSI-AlignAlytics/dimple"),
+    person("Mike", "Bostock", role = c("aut", "cph"), comment = "d3.js
+      library in htmlwidgets/lib, http://d3js.org"),
+    person("Kenton", "Russell", role = c("aut", "cre"), comment = "R
+      interface", email = "kent.russell@timelyportfolio.com")
+  )
+Maintainer: Kenton Russell <kent.russell@timelyportfolio.com>
+Description: plottableR provides easy htmlwidget access in R to the powerful open-source
+  Plottable.js from Palantir Technologies.  From its own description,
+  "Plottable.js consists of pluggable set of Components which encapsulate
+  rendering logic, and a layout engine that is responsible for positioning them."
+License: MIT + file LICENSE
+Imports:
+  htmlwidgets
+Suggests:
+  htmltools,
+    knitr,
+    testthat
+LazyData: TRUE
+VignetteBuilder: knitr

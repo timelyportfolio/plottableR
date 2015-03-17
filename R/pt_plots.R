@@ -4,8 +4,14 @@ ptp_area <- function(...){
 }
 
 #' @export
-ptp_bar <- function(...){
-
+ptp_bar <- function( xScale = NULL, yScale = NULL, isVertical = T){
+  return(
+    list(
+      xScale = htmlwidgets::JS(xScale)
+      ,yScale = htmlwidgets::JS(yScale)
+      ,isVertical = isVertical
+    )
+  )
 }
 
 #' @export

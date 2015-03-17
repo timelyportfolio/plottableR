@@ -1,6 +1,12 @@
 #' @export
-pts_category <- function(...){
+pt_scale <- function( type = NULL, ... ){
+  arguments <- list(...)
+  return(list( type = type, arguments = arguments ))
+}
 
+#' @export
+pts_ordinal <- function(...){
+  htmlwidgets::JS('new Plottable.Scale.Ordinal()')
 }
 
 
@@ -16,7 +22,7 @@ pts_color_interpolated <- function(...){
 
 #' @export
 pts_linear <- function(...){
-
+  htmlwidgets::JS('new Plottable.Scale.Linear()')
 }
 
 #' @export

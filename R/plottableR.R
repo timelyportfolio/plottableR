@@ -5,12 +5,28 @@
 #' @import htmlwidgets
 #'
 #' @export
-plottable <- function(..., width = NULL, height = NULL) {
+plottable <- function(
+  data = NULL
+  , components = NULL
+  , scales = NULL
+  , axes = NULL
+  , plots = NULL
+  , ...
+  , width = NULL
+  , height = NULL
+) {
 
   # forward options using x
   x = list(
-    ...
+    data = data
+    , components = components
+    , scales = scales
+    , axes = axes
+    , plots = plots
+    , ...
   )
+
+  x <- Filter( Negate(is.null), x )
 
   # create widget
   htmlwidgets::createWidget(
